@@ -181,7 +181,7 @@ class PrestashopWebServiceLibrary
             $this->version = $headerArray['PSWS-Version'];
         }
 
-        $this->printDebug('HTTP REQUEST HEADER', $info['request_header']);
+        /*$this->printDebug('HTTP REQUEST HEADER', $info['request_header']);
         $this->printDebug('HTTP RESPONSE HEADER', $header);
 
         if ($curl_params[CURLOPT_CUSTOMREQUEST] == 'PUT' || $curl_params[CURLOPT_CUSTOMREQUEST] == 'POST') {
@@ -189,7 +189,7 @@ class PrestashopWebServiceLibrary
         }
         if ($curl_params[CURLOPT_CUSTOMREQUEST] != 'DELETE' && $curl_params[CURLOPT_CUSTOMREQUEST] != 'HEAD') {
             $this->printDebug('RETURN HTTP BODY', $body);
-        }
+        }*/
 
         return array(
             'status_code' => $status_code,
